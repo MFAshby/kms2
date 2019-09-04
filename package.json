@@ -1,0 +1,16 @@
+{
+  "name": "kms2",
+  "version": "1.0.0",
+  "description": "A decryption access manager",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "mocha test",
+    "start": "node --experimental-modules server/server.js"
+  },
+  "author": "Martin Ashby",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "neo4j-driver": "^1.7.6"
+  }
+}
