@@ -1,0 +1,20 @@
+{
+  "$id": "https://mfashby-kms2.glitch.me/static/schemas/create-entrypoint.json",
+  "id": "create-entrypoint",
+  "type": "object",
+  "properties": {
+    "publicID": {
+      "type": "string", 
+      "minLength": "1"
+    },
+    "secret": {
+      "type": "string",
+      "minLength": "1"
+    },
+    "labels": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    }
+  },
+  "required": ["publicID", "secret"]
+}

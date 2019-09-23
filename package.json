@@ -4,13 +4,17 @@
   "description": "A decryption access manager",
   "main": "server/server.js",
   "scripts": {
-    "test": "mocha test",
-    "start": "node --experimental-modules server/server.js"
+    "test": "jest",
+    "start": "npm test && node server/server.js"
   },
   "author": "Martin Ashby",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "neo4j-driver": "^1.7.6"
+    "neo4j-driver": "^1.7.6",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2",
+    "jsonschema": "^1.2.4",
+    "uuid": "3.3.2"
   }
 }
