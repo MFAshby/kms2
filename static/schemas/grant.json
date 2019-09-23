@@ -1,0 +1,24 @@
+{
+  "$id": "https://mfashby-kms2.glitch.me/static/schemas/grant.json",
+  "id": "read",
+  "type": "object",
+  "properties": {
+    "entrypoint": { 
+      "type": "object",
+      "properties": {
+        "publicID": { "type": "string", "minLength": "1" },
+        "secret": { "type": "string", "minLength": "1" }
+      },
+      "required": ["publicID", "secret"]
+    },
+    "fromPublicID": {
+      "type": "string",
+      "minLength": "1"
+    },
+    "toPublicID": {
+      "type": "string",
+      "minLength": "1"
+    }
+  },
+  "required": ["entrypoint", "fromPublidID", "toPublicID"]
+}
